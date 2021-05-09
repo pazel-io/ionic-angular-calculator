@@ -12,7 +12,6 @@
   flex-direction: column;
   align-content: center;
   align-items: flex-end;
-  margin-top: 2rem;
   background-color: rgba(99, 158, 226, 0.1);
   padding: 4rem 2rem;
 }
@@ -57,7 +56,10 @@
   margin: 0.2rem;
   padding: 1.5rem;
   border-radius: 15px;
-  font-size: 1.5rem;
+  --minFontSize: 10px;
+  --maxFontSize: 60px;
+  --scaler: 4vw;
+  font-size: clamp(var(--minFontSize), var(--scaler), var(--maxFontSize));
 }
 
 .button {
