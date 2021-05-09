@@ -10,7 +10,6 @@ An example of a Calculator UI built with Ionic Angular
 * Animations on button clicks
 * Automatic calculation
 * Use of stock Ionic components
-* CSS Modules
 * Ionic CSS utilities
 
 ### To run
