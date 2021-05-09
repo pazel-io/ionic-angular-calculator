@@ -1,20 +1,24 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
+<ion-header [translucent]="true"></ion-header>
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div class="sumContainer">
+
+    <h4 *ngIf="title">{{ title }}</h4>
+    <p>{{sumHistory}}</p>
+    <h1 class="animate__animated animate__headShake">
+      {{ sumToString(sum) }}
+    </h1>
   </div>
 </ion-content>
+<ion-footer class="calculatorContainer">
+  <ion-grid class="ion-text-center ion-justify-content-center">
+    <ion-row class="buttonRow" *ngFor="let buttonsRow of buttonsRows; let i = index;">
+      <ion-col *ngFor="let button of buttonsRow"
+               class="animate__animated animate__faster button"
+               [class.specialButton]="button.special"
+               (click)="handleClick($event, button.value)">
+        {{ button.value === "/" ? "&divide;" : button.value === "*" ? "&times;" : button.value }}
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-footer>

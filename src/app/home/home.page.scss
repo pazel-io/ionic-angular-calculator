@@ -1,27 +1,63 @@
-#container {
-  text-align: center;
+.calculatorContainer {
 
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  padding-bottom: 2.5rem;
+  background-color: white;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+.sumContainer {
+
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: flex-end;
+  margin-top: 2rem;
+  background-color: rgba(99, 158, 226, 0.1);
+  padding: 4rem 2rem;
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
+.sumContainer h1,
+.sumContainer h4,
+.sumContainer p {
 
   margin: 0;
+  padding: 0;
 }
 
-#container a {
-  text-decoration: none;
+.sumContainer h1 {
+
+  font-size: 4rem;
+}
+
+.sumContainer p {
+
+  font-size: 2rem;
+  color: rgb(163, 163, 163);
+}
+
+.sumContainer h4 {
+
+  color: rgb(197, 197, 197);
+}
+
+.button,
+.specialButton {
+
+  margin: 0.2rem;
+  padding: 1.5rem;
+  border-radius: 15px;
+  font-size: 1.5rem;
+}
+
+.button {
+
+  color: rgb(255, 255, 255);
+  background-color: rgb(58, 58, 58);
+}
+
+.specialButton {
+
+  color: rgb(255, 255, 255);
+  background-color: var(--blue-color);
 }
