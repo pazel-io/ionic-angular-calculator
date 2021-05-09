@@ -1,7 +1,7 @@
 # ionic-angular-calculator
 An example of a Calculator UI built with Ionic Angular
 
-![Ionic Angular Calculator]()
+![Ionic Angular Calculator](https://github.com/pazel-io/ionic-angular-calculator/blob/develop/src/assets/banner.png)
 
 ### Included in this Ionic Angular UI
 * Fully functional Calculator
